@@ -26,15 +26,15 @@ export default function LiveShoppingFeatures() {
         }
     ]
   return (
-    <div id='live-shopping' className="grid grid-cols-2 gap-8 p-16">
+    <div id='live-shopping' className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 px-5 sm:px-10 md:px-12 lg:px-16">
         <div className="contents flex flex-col items-start justify-center gap-7">
-             <h2 className="text-black text-[40px] font-semibold flex items-center flex-wrap gap-2">
+             <h2 className="leading-none text-black text-[40px] font-semibold flex items-center flex-wrap gap-2">
                 <span className="text-[#9B4B6A]">
                     Live Shopping
                 </span>
                 Revolution
             </h2>
-            <p className="text-xl max-w-4xl">
+            <p className="text-lg sm:text-xl max-w-4xl">
                 Engage directly with customers through live shopping sessions, showcase products in real-time, and build authentic connections that drive sales.
             </p>
 

@@ -5,15 +5,15 @@ import React from 'react'
 
 export default function HeroSection() {
   return (
-    <div className="bg-gradient-to-b from-[#FFFFFF] to-[#FFE8F5] min-h-screen w-full p-20">
-        <div className="grid grid-cols-2 grid-rows-1 gap-0 space-x-10">
-            <div className="content p-10 flex flex-col items-start justify-center gap-8">
-                <h2 className="text-black font-semibold text-[64px] flex flex-col leading-none">
+    <div className="bg-gradient-to-b from-[#FFFFFF] to-[#FFE8F5] min-h-screen w-full p-5 sm:p-6 md:p-20">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 md:gap-0 md:space-x-6 lg:space-x-10">
+            <div className="content py-10 px-2 md:px-10 flex flex-col items-start justify-center gap-8">
+                <h2 className="text-black font-semibold text-[44px] md:text-[54px] lg:text-[64px] flex flex-col leading-none">
                     Empowering
                     <b className="text-[#9B4B6A]">African Beauty</b>
                     Entrepreneurs
                 </h2>
-                <p className="text-black text-[24px]">
+                <p className="text-black text-base md:text-[24px]">
                     Join Kenya's leading beauty-tech platform and transform your salon, spa, or beauty business into a digital powerhouse.
                 </p>
 
@@ -46,16 +46,16 @@ export default function HeroSection() {
 
             {/* image section */}
             <div className="flex items-center justify-center relative">
-                <div className="rounded-[50px] w-full">
+                <div className="rounded-[50px] w-full max-sm:h-80">
                     <img
                         src={`/images/hero-image.png`}
                         height={614}
                         width={582}
                         loading='lazy'
-                        className='object-cover w-full rounded-[50px]'
+                        className='object-cover h-full w-full rounded-[50px]'
                     />
                 </div>
-                <div className="absolute -bottom-10 -left-10 z-1">
+                <div className="absolute -bottom-10 -left-5 md:-left-10 z-1">
                     <div className="rounded-2xl bg-white shadow-xl shadow-[#9B4B6A4D]/30 p-5 flex items-center gap-5 justify-center">
                         <div className="flex">
                             <CircledSpan>

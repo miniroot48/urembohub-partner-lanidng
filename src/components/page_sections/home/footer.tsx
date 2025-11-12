@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className="p-16 bg-[#111827] text-white">
-        <div className="flex items-start justify-start gap-8 py-8">
+    <div className="p-8 sm:p-10 md:p-12 lg:p-16 bg-[#111827] text-white">
+        <div className="flex flex-col md:flex-row items-start justify-start gap-8 py-8">
             {/* section 1 */}
 
             <div className="flex flex-col gap-5 flex-2/5">
@@ -46,46 +46,11 @@ export default function Footer() {
 
             {/* section 2 */}
 
-            <div className="grid grid-cols-3 gap-5 flex-3/5">
+            <div className="flex flex-wrap md:grid md:grid-cols-1 md:grid-cols-3 gap-10 md:gap-5 flex-3/5">
                 {/* links 1 */}
-                <div className="flex flex-col gap-7">
-                    <h2 className="text-[#CD8E97] text-xl font-semibold">
-                        Platform
-                    </h2>
-                    <ul className="list-none flex flex-col gap-3 items-start justify-start text-lg">
-                        <li className="list-item">
-                            <Link
-                                href={'#'}
-                                className='text-white hover:text-[#CD8E97]'
-                            >
-                                Features
-                            </Link>
-                        </li>
-                         <li className="list-item">
-                            <Link
-                                href={'#'}
-                                className='text-white hover:text-[#CD8E97]'
-                            >
-                                Pricing
-                            </Link>
-                        </li>
-                         <li className="list-item">
-                            <Link
-                                href={'#'}
-                                className='text-white hover:text-[#CD8E97]'
-                            >
-                                Analytics
-                            </Link>
-                        </li>
-                         <li className="list-item">
-                            <Link
-                                href={'#'}
-                                className='text-white hover:text-[#CD8E97]'
-                            >
-                                Live Shopping
-                            </Link>
-                        </li>
-                    </ul>
+                <div className="flex flex-row md:flex-col gap-1 items-start max-sm:w-full max-sm:border max-sm:border-r-0 max-sm:border-l-0 max-sm:border-[#CD8E97]">
+                    <img src="/images/award1.png" alt="" className="max-w-1/3 lg:max-w-full" />
+                    <img src="/images/award3.png" alt="" className="max-w-1/3 lg:max-w-full" />
                 </div>
 
                 {/* links 2 */}
@@ -94,14 +59,6 @@ export default function Footer() {
                         Support
                     </h2>
                     <ul className="list-none flex flex-col gap-3 items-start justify-start text-lg">
-                        <li className="list-item">
-                            <Link
-                                href={'#'}
-                                className='text-white hover:text-[#CD8E97]'
-                            >
-                                Community
-                            </Link>
-                        </li>
                          <li className="list-item">
                             <Link
                                 href={'#'}
@@ -159,7 +116,7 @@ export default function Footer() {
 
         {/* copyright div */}
 
-        <div className="border-t border-[#CD8E97] pt-5 flex items-center justify-between gap-5">
+        <div className="border-t border-[#CD8E97] pt-5 flex flex-col md:flex-row items-center justify-between gap-5">
             <p className="">
                 © 2024 UremboHub. All rights reserved.
             </p>

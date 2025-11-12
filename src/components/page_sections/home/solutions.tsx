@@ -24,20 +24,20 @@ export default function Solutions() {
         }
     ]
   return (
-    <div id='features' className="flex items-center justify-center flex-col gap-5 p-20">
-        <h2 className="text-black text-[64px] font-semibold flex items-center flex-wrap gap-2">
+    <div id='features' className="flex items-center justify-center flex-col gap-5 py-20 px-5 sm:px-10 md:px-16 lg:px-20">
+        <h2 className="leading-none text-black text-[44px] md:text-[54px] lg:text-[64px] font-semibold flex items-center flex-wrap gap-2">
             Efficiency
             <span className="text-[#9B4B6A]">
                 Meet
             </span>
             Excellence
         </h2>
-        <p className="text-xl max-w-4xl text-center">
+        <p className="text-xl w-full md:max-w-4xl md:text-center">
             See how technology transforms daily operations and accelerates business growth.
         </p>
 
         {/* section with drops */}
-        <div className="grid grid-cols-3 gap-5 pt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-10">
             {solutions.map((soln, idx) => (
                 <div
                     key={idx}

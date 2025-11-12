@@ -4,7 +4,7 @@ import CustomLinkBtn from '../UI/custom_cta_button'
 
 export default function TopHeader() {
   return (
-    <div className="px-20 py-3 flex items-center justify-between bg-[#9B4B6A] sticky top-0 z-20">
+    <div className="px-5 sm:px-10 md:px-16 lg:px-20 py-3 flex items-center justify-between bg-[#9B4B6A] sticky top-0 z-20">
         <div className="logo">
             <img src="/header-logo.png" alt="" className="h-[60px]" />
         </div>

@@ -6,7 +6,7 @@ export default function HeaderNav() {
     <div className="flex items-center justify-center">
 
         {/* desktop nav */}
-        <ul className="list-none flex items-center justify-center space-x-8 text-lg">
+        <ul className="hidden md:flex list-none items-center justify-center space-x-8 text-lg">
             <li className="list-item">
                 <Link
                     href={`#about`}
