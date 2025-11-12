@@ -11,6 +11,9 @@ const josefinSans = Josefin_Sans({
 export const metadata: Metadata = {
   title: "Urembo Hub | Empowering African Beauty Entrepreneurs",
   description: "Join Kenya's leading beauty-tech platform and transform your salon, spa, or beauty business into a digital powerhouse.",
+  icons:{
+    icon: "/logo.png"
+  }
 };
 
 export default function RootLayout({
