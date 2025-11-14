@@ -4,10 +4,10 @@ import React from 'react'
 export default function CTASection() {
   return (
     <div className="flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-2 gap-7 bg-[#984967]">
-        <div className="img h-[500px] md:h-[664px]">
+        <div className="img h-[400px] md:h-[664px] overflow-hidden">
             <img
                 src="/images/cta-section.png"
-                alt="" className="object-cover transform -rotate-y-180 -w-200 w-full h-full"
+                alt="" className="object-cover transform -rotate-y-180 w-full h-[425px] md:h-full "
             />
         </div>
         <div className="flex items-start justify-center flex-col gap-5 py-16 max-sm:pb-0 md:py-20 px-6 md:px-12 lg:px-20 text-white">

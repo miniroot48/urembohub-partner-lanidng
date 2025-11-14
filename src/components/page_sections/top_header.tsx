@@ -12,7 +12,7 @@ export default function TopHeader() {
         {/* link navigation */}
         <HeaderNav />
 
-        <div className="flex items-center justify-center">
+        <div className="hidden md:flex items-center justify-center">
             <CustomLinkBtn
                 href='/signup'
                 variant='light'

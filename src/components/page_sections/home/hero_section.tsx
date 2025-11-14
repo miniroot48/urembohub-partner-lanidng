@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function HeroSection() {
   return (
-    <div className="bg-gradient-to-b from-[#FFFFFF] to-[#FFE8F5] min-h-screen w-full p-5 sm:p-6 md:p-20">
+    <div className="bg-linear-to-b from-[#FFFFFF] to-[#FFE8F5] min-h-screen w-full p-5 sm:p-6 md:p-20">
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 md:gap-0 md:space-x-6 lg:space-x-10">
             <div className="content py-10 px-2 md:px-10 flex flex-col items-start justify-center gap-8">
                 <h2 className="text-black font-semibold text-[44px] md:text-[54px] lg:text-[64px] flex flex-col leading-none">
@@ -59,7 +59,7 @@ export default function HeroSection() {
                     <div className="rounded-2xl bg-white shadow-xl shadow-[#9B4B6A4D]/30 p-5 flex items-center gap-5 justify-center">
                         <div className="flex">
                             <CircledSpan>
-                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg className='h-6 w-6 sm:h-8 sm:w-8' viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 13.2369H32M1 13.2369V30.3684C1 30.8012 1.1719 31.2162 1.47788 31.5221C1.78386 31.8281 2.19886 32 2.63158 32H30.3684C30.8011 32 31.2161 31.8281 31.5221 31.5221C31.8281 31.2162 32 30.8012 32 30.3684V13.2369M1 13.2369V5.07897C1 4.64624 1.1719 4.23125 1.47788 3.92527C1.78386 3.61929 2.19886 3.44739 2.63158 3.44739H30.3684C30.8011 3.44739 31.2161 3.61929 31.5221 3.92527C31.8281 4.23125 32 4.64624 32 5.07897V13.2369" stroke="#FFE8F5" strokeOpacity="0.9" strokeWidth="2" strokeLinejoin="round"/>
                                     <path d="M9.97368 1V7.52632M23.0263 1V7.52632M19.7632 25.4737H24.6579M8.3421 25.4737H13.2368M19.7632 18.9474H24.6579M8.3421 18.9474H13.2368" stroke="#FFE8F5" strokeOpacity="0.9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>

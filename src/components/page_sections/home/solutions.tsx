@@ -46,7 +46,7 @@ export default function Solutions() {
                     <div className="rounded-[20px] w-full h-[197px] overflow-hidden">
                         <img src={soln.image} alt="" className="object-cover w-full" />
                     </div>
-                    <div className="contents p-5 flex items-start justify-start flex-col gap-2">
+                    <div className="content p-5 flex items-start justify-start flex-col gap-2">
                         <h2 className="text-xl font-semibold">
                             {soln.title}
                         </h2>
