@@ -75,7 +75,7 @@ export default function SignUpForm() {
             if (!response.error) {
                 toast.success("Account created successfully! Please check your email!.");
             } else {
-                toast.error(response.error.message || "Sign-up failed. Please try again.");
+                toast.error(`Error: ${response.message}` || "Sign-up failed. Please try again.");
                 console.log('response',response);
             }
         } finally {
