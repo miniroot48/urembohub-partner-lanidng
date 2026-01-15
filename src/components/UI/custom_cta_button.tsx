@@ -6,6 +6,7 @@ type ButtonProps = {
     id?: string,
     variant?: "light" | "dark",
     onClick?: () => void,
+    loading?: boolean,
     children: React.ReactNode,
     href?: string
 }
@@ -15,6 +16,7 @@ export default function CustomLinkBtn({
     variant="dark",
     onClick,
     children,
+    loading=false,
     href
 }: ButtonProps) {
   if(href){
@@ -37,11 +39,14 @@ export default function CustomLinkBtn({
             id={id}
             type={type}
             onClick={onClick}
+            disabled={loading}
             className={`bg-linear-to-r ${
                 variant === "dark" 
                 ? "from-[#9B4B6A] to-[#B46A89]" 
                 : "from-[#CD8E97] to-[#B46A89]"
-            } px-6 py-3 rounded-full text-[#FFEFF8] font-semibold cursor-pointer`}
+            } px-6 py-3 rounded-full text-[#FFEFF8] font-semibold
+            ${loading? `cursor-not-allowed opacity-70`: `cursor-pointer opacity-100`}
+            `}
         >
             {children}
         </button>

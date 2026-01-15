@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Josefin_Sans } from 'next/font/google';
+import { Toaster } from "react-hot-toast";
 
 const josefinSans = Josefin_Sans({
   subsets: ['latin'],
@@ -25,6 +26,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${josefinSans.className} antialiased`}>
         {children}
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            duration: 4000,
+            style: {
+              fontSize: '16px',
+            },
+          }}
+        />
       </body>
     </html>
   );

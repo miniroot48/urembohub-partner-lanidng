@@ -69,7 +69,7 @@ export default function CustomSelect({
                     onFocus={() => setIsOpen(true)}
                     name={name}
                     placeholder={placeholder}
-                    className="rounded-full w-full border-2 border-[#9B4B6A] focus:outline-0 focus:ring-3 focus:ring-[#9B4B6A]/30 bg-transparent px-6 py-3 text-lg"
+                    className="rounded-full capitalize w-full border-2 border-[#9B4B6A] focus:outline-0 focus:ring-3 focus:ring-[#9B4B6A]/30 bg-transparent px-6 py-3 text-lg"
                 />
 
                 <button
@@ -91,7 +91,7 @@ export default function CustomSelect({
                                     key={idx}
                                     type="button"
                                     onClick={() => handleSelect(option)}
-                                    className="rounded-md w-full hover:bg-gray-100 cursor-pointer text-black flex items-center justify-start gap-2 px-3 py-2 text-left"
+                                    className={`${option == value ? 'bg-pink-100' : 'hover:bg-pink-50'} rounded-md capitalize w-full cursor-pointer text-black flex items-center justify-start gap-2 px-3 py-2 text-left`}
                                 >
                                     {option == value && (
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
