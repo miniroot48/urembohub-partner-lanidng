@@ -23,7 +23,7 @@ export const signUp = async (email: string, password: string, userData: Partial<
         // "businessPhone": "+254712345678"
     // }
     // i'll use fetch to make the request
-      return await fetch(process.env.NEXT_PUBLIC_API_BASE_URL + '/auth/register', {
+      return await fetch(process.env.NEXT_PUBLIC_API_BASE_URL + '/auth/waitlist-signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

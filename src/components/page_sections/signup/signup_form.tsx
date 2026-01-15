@@ -35,11 +35,11 @@ export default function SignUpForm() {
 
     });
 
-    const paterners =[
-        {title: "Vendor (Offer Beauty Service)", role: "vendor"},
-        {title: "Retailers (Sale Tangible Beauty products)", role: "retailer"},
-        {title: "Manufacturers (Produce Beauty Products)", role: "manufacturer"}
-    ];
+    // const paterners =[
+    //     {title: "Vendor (Offer Beauty Service)", role: "vendor"},
+    //     {title: "Retailers (Sale Tangible Beauty products)", role: "retailer"},
+    //     {title: "Manufacturers (Produce Beauty Products)", role: "manufacturer"}
+    // ];
     const [loading, setLoading] = useState(false);
     const handleSubmit =    async (e: React.FormEvent) => {
         e.preventDefault();
@@ -72,7 +72,7 @@ export default function SignUpForm() {
             const response = await signUp(formData.email, formData.password, userData);
             console.log('response',response);
 
-            if (!response.error) {
+            if (response.ok) {
                 toast.success("Account created successfully! Please check your email!.");
             } else {
                 toast.error(`Error: ${response.message}` || "Sign-up failed. Please try again.");
