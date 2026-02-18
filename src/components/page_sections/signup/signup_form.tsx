@@ -72,13 +72,28 @@ export default function SignUpForm() {
             const response = await signUp(formData.email, formData.password, userData);
             console.log('response',response);
 
-            if (response.ok) {
+            const success = await response.user;
+
+            if (success) {
                 toast.success("Account created successfully! Please check your email!.");
+                setFormData({
+                    fullName: "",
+                    dob: "",
+                    email: "",
+                    password: "",
+                    confirmPassword: "",
+                    businessPhone: "",
+                    role: "",
+
+                });
             } else {
                 toast.error(`Error: ${response.message}` || "Sign-up failed. Please try again.");
                 console.log('response',response);
-            }
-        } finally {
+            }            
+        } catch(err){
+            console.error("UnExpected Error Occured:", err);
+            toast.error("Unexpected Error!");
+        }finally {            
             setLoading(false);
         }
     };
